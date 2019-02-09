@@ -3,17 +3,17 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://alecmussell.github.io/making-metal-work/</loc>
+    <loc>/making-metal-work/</loc>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://alecmussell.github.io/making-metal-work/categories/</loc>
+    <loc>/making-metal-work/categories/</loc>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://alecmussell.github.io/making-metal-work/tags/</loc>
+    <loc>/making-metal-work/tags/</loc>
     <priority>0</priority>
   </url>
   

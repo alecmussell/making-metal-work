@@ -1,8 +1,9 @@
 # Site settings
-baseurl = "https://alecmussell.github.io/making-metal-work/"
+baseurl = "/making-metal-work/"
 languageCode = "en-us"
 title = "Alec Mussell"
 theme = "hugo-agency-theme"
+publishDir = "../docs"
 
 [params]
   # You can use Markdown syntax for urls [text](//url.to/source) or
