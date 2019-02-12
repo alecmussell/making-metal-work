@@ -1,10 +1,11 @@
 # Site settings
-#baseurl = "/making-metal-work/"
-baseurl = "/"
-languageCode = "en-gb"
-title = "Alec Mussell"
+baseurl = "https://example.org/"
+languageCode = "en-us"
+title = "Agency"
 theme = "hugo-agency-theme"
-publishDir = "../docs"
+
+# Enter your tracking code to enable Google Analytics
+googleAnalytics = ""
 
 [params]
   # You can use Markdown syntax for urls [text](//url.to/source) or
@@ -16,8 +17,8 @@ publishDir = "../docs"
 
   # To provide some metadata for search engines feel free to add a few
   # information about you and your website.
-  name = "Alec Mussell"
-  description = "Making Metal Work"
+  name = "Your name"
+  description = "Your description"
   # email = "your@email.com"
 
   # Link custom assets relative to /static
@@ -27,17 +28,25 @@ publishDir = "../docs"
 
   # Possibility to disable external/additional fonts
   # Exception: Fontawesome
-  #disableFonts = false
-  disableFonts = true
+  disableFonts = false
 
   # 404 error customization
   [params.error404]
     heading = "Page couldn't be found"
     text = "Please visit [this page](/)"
 
+  # Optional piwik tracking
+  #[params.analytics.piwik]
+  #  URL = "https://stats.example.com"
+  #  ID = "42"
+  #  # Track all subdomains with "*.example.com"
+  #  domain = "www.example.com"
+  #  # Optional integrity check hash
+  #  hash = "sha512-RfeD0pacGTqy9m7U6PgehQfS4cc7SIt+e+P+H5e848kEvB/RW84CUGO3O4O3LNbxjevym6KPUZ8muPsMrI8WIw=="
+
   # Navigation
   [params.navigation]
-    brand = "Alec Mussell - Making Metal Work"
+    brand = "The Agency"
     # Optional logo as brand stored in img/
     #logo = "logo.svg"
     services = "Services"
@@ -57,46 +66,46 @@ publishDir = "../docs"
     #  weight = 10
 
     # postpended links
-    #[[menu.postpend]]
-    #  url = "http://gohugo.io"
-    #  name = "External link"
-    #  weight = 10
+    [[menu.postpend]]
+      url = "http://gohugo.io"
+      name = "External link"
+      weight = 10
 
 
   # Hero section
   [params.hero]
     # To change the background image of the hero, replace 'header-bg.jpg' in
     # the 'static/img' folder.
-    title = "Gates & Railings"
-    #subtitle = "It's nice to meet you"
-    buttonText = "Contact"
+    title = "Welcome To Our Studio!"
+    subtitle = "It's nice to meet you"
+    buttonText = "Tell me more"
 
 
   # Services section
   [params.services]
     enable = true
     title = "Services"
-    #subtitle = ""
+    subtitle = "Lorem ipsum dolor sit amet consectetur."
 
     [[params.services.row]]
 
     [[params.services.row.list]]
       icon = "fa-shopping-cart"
-      title = "Gates & Railings"
-      description = "Hand made metal gates and railings made to measure with all installation included. Automated gate installation is also available"
-      #url = "#"
+      title = "E-Commerce"
+      description = "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit."
+      url = "#"
 
     [[params.services.row.list]]
       icon = "fa-laptop"
-      title = "Restoring existing metal work"
-      description = "Removal of existing metal gates or railings for repair, restoration and repainting (powder coating)"
-      #url = "#"
+      title = "Responsive Design"
+      description = "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit."
+      url = "#"
 
     [[params.services.row.list]]
       icon = "fa-lock"
-      title = "Bespoke builds and designs"
-      description = "From metal flowers to metal archways, we can work with you to make your metal work"
-      #url = "#"
+      title = "Web"
+      description = "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit."
+      url = "#"
 
   # Portfolio section
   [params.portfolio]
@@ -106,12 +115,12 @@ publishDir = "../docs"
     # at the root of this Hugo site.
     # For more informtion take a look at the README.
     title = "Portfolio"
-    #subtitle = ""
+    subtitle = "Lorem ipsum dolor sit amet consectetur."
 
     [params.portfolio.modal]
-      #client = "Client"
-      #date = "Date"
-      #category = "Category"
+      client = "Client"
+      date = "Date"
+      category = "Category"
       buttonText = "Close project"
 
 
@@ -119,34 +128,38 @@ publishDir = "../docs"
   [params.about]
     enable = true
     title = "About"
-    #subtitle = ""
-    endpoint = "Installation complete"
+    subtitle = "Lorem ipsum dolor sit amet consectetur."
+    endpoint = "Be part<br>of our<br>story!"
 
     # The events will be listed from the top to the bottom.
     # All images are stored under 'static/img/about'.
     # Replace them with your own.
     [[params.about.events]]
       img = "1.jpg"
-      title = "Initial Contact"
-      description = "We arrange a time and place to meet in person. Contact me <<< LINK to contact section"
+      date = "2009-2011"
+      title = "Our Humble Beginnings"
+      description = "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!"
 
     [[params.about.events]]
       img = "2.jpg"
-      title = "Design"
-      description = "Working alongside you to choose the right design and colours"
+      date = "March 2011"
+      title = "An Agency is Born"
+      description = "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!"
 
     [[params.about.events]]
       img = "3.jpg"
-      title = "Fabrication"
-      description = "Your design is fabricated and made to measure, then sent to be powder coated in the colour of your choice"
+      date = "December 2012"
+      title = "Our Humble Beginnings"
+      description = "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!"
 
     [[params.about.events]]
       img = "4.jpg"
-      title = "Installation"
-      description = "Gates and railings are then installed using any posts, fixtures or fittings as required"
+      date = "July 2014"
+      title = "Phase Two Expansion"
+      description = "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!"
 
 
-#  # Comments section
+  # Team section
   [params.team]
     enable = true
     # Possibility to center items
@@ -159,68 +172,77 @@ publishDir = "../docs"
     # Replace them with your own too.
     # Suggestion: Image size should be at least 360px*360px or the alignment might be affected.
     [[params.team.members]]
-      #img = "1.jpg"
-      img = "fa-twitter"
-      name = "Kay Garland"
-      bio = """Kay is an awesome Lead Designer with heaps of experience in the field of UX.
-She worked at Pied Piper for years until they went belly up."""
-
-    [[params.team.members]]
       img = "1.jpg"
       name = "Kay Garland"
+      position = "Lead Designer"
+      reportsTo = "CTO"
+      livesIn = "[Munich, Germany](#some-maps-url)"
+      scope = [
+        "UX for [member dashboard](#)",
+        "Maintainer for [awesome-project](#)",
+        "Open Source [community management](#)"
+      ]
+      # For bio markdown and even multiline strings are available.
       bio = """Kay is an awesome Lead Designer with heaps of experience in the field of UX.
 She worked at Pied Piper for years until they went belly up."""
+      social = [
+        ["fa-twitter", "#"],
+        ["fa-facebook", "#"],
+        ["fa-linkedin", "#"]
+      ]
 
     [[params.team.members]]
-      img = "1.jpg"
-      name = "Kay Garland"
-      bio = """Kay is an awesome Lead Designer with heaps of experience in the field of UX.
-She worked at Pied Piper for years until they went belly up."""
+      img = "2.jpg"
+      name = "Larry Parker"
+      position = "Lead Marketer"
+      social = [
+        ["fa-twitter", "#"],
+        ["fa-facebook", "#"],
+        ["fa-linkedin", "#"]
+      ]
 
     [[params.team.members]]
-      img = "1.jpg"
-      name = "Kay Garland"
-      bio = """Kay is an awesome Lead Designer with heaps of experience in the field of UX.
-She worked at Pied Piper for years until they went belly up."""
+      img = "3.jpg"
+      name = "Diana Pertersen"
+      position = "Lead Developer"
+      social = [
+        ["fa-twitter", "#"],
+        ["fa-facebook", "#"],
+        ["fa-linkedin", "#"]
+      ]
 
-#  # Client section
-#    [params.clients_list]
-#      enable = true
-#      # Possibility to center items
-#      #center = true
-#      # Optional client title specifying the involvement
-#      #title = "Used and trusted by"
-#
-#      # All the clients' logos are stored under 'static/img/logos'.
-#      # Replace them with your clients's logos.
-#      # Suggestion: .svg in the size of 280px*80px looks good
-#      [[params.clients]]
-#        logo = "envato.jpg"
-#        link = "#"
-#
-#      [[params.clients]]
-#        logo = "designmodo.jpg"
-#        link = "#"
-#
-#      [[params.clients]]
-#        logo = "themeforest.jpg"
-#        link = "#"
-#
-#      [[params.clients]]
-#        logo = "creative-market.jpg"
-#        link = "#"
+  # Client section
+    [params.clients_list]
+      enable = true
+      # Possibility to center items
+      #center = true
+      # Optional client title specifying the involvement
+      #title = "Used and trusted by"
+
+      # All the clients' logos are stored under 'static/img/logos'.
+      # Replace them with your clients's logos.
+      # Suggestion: .svg in the size of 280px*80px looks good
+      [[params.clients]]
+        logo = "envato.jpg"
+        link = "#"
+
+      [[params.clients]]
+        logo = "designmodo.jpg"
+        link = "#"
+
+      [[params.clients]]
+        logo = "themeforest.jpg"
+        link = "#"
+
+      [[params.clients]]
+        logo = "creative-market.jpg"
+        link = "#"
 
   # Contact section
   [params.contact]
-#    name = "Alec Mussell"
-#    number = "07808730692"
-#    email = "alecmussell@hotmail.com"
-
-
-
     enable = true
-    title = "Contact"
-    #subtitle  = "Lorem ipsum dolor sit amet consectetur."
+    title = "Contact us"
+    subtitle  = "Lorem ipsum dolor sit amet consectetur."
     buttonText = "Send message"
     # netlify = true
 
@@ -279,28 +301,28 @@ She worked at Pied Piper for years until they went belly up."""
 
   # Footer section
   [params.footer]
-    enable = false
-    #copyright = "Published under the Apache License 2.0."
+    enable = true
+    copyright = "Published under the Apache License 2.0."
 
-    #[[params.footer.social]]
-    #  icon = "fa-twitter"
-    #  link = "#"
-    #  title = "Twitter"
+    [[params.footer.social]]
+      icon = "fa-twitter"
+      link = "#"
+      title = "Twitter"
 
-    #[[params.footer.social]]
-    #  icon = "fa-facebook"
-    #  link = "#"
-    #  title = "Facebook"
+    [[params.footer.social]]
+      icon = "fa-facebook"
+      link = "#"
+      title = "Facebook"
 
-    #[[params.footer.social]]
-    #  icon = "fa-linkedin"
-    #  link = "#"
-    #  title = "LinkedIn"
+    [[params.footer.social]]
+      icon = "fa-linkedin"
+      link = "#"
+      title = "LinkedIn"
 
-    #[[params.footer.quicklinks]]
-    #  text = "Privacy Policy"
-    #  link = "#"
+    [[params.footer.quicklinks]]
+      text = "Privacy Policy"
+      link = "#"
 
-    #[[params.footer.quicklinks]]
-    #  text = "Terms of Use"
-    #  link = "#"
+    [[params.footer.quicklinks]]
+      text = "Terms of Use"
+      link = "#"
