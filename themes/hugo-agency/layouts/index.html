@@ -19,8 +19,8 @@
       {{ partial "about.html" . }}
     {{ end }}
 
-    {{ if .Site.Params.team.enable }}
-      {{ partial "team.html" . }}
+    {{ if .Site.Params.reviews.enable }}
+      {{ partial "reviews.html" . }}
     {{ end }}
 
     {{ if .Site.Params.clients_list.enable }}

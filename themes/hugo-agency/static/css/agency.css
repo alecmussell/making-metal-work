@@ -670,26 +670,27 @@ section h3.section-subheading {
   justify-content: center;
 }
 
-.team-member {
+.reviewer {
     margin-bottom: 50px;
     text-align: center;
 }
 
-.team-member img {
+.reviewer img {
     margin: 0 auto;
     border: 7px solid #fff;
 }
 
-.team-member p {
+.reviewer p {
     margin-top: 0;
 }
-.team-member h3 {
+
+.reviewer h3 {
     text-transform: none;
     font-weight: 600;
     color: #333;
 }
 
-.team-member h4 {
+.reviewer h4 {
     font-size: 16px;
     text-transform: none;
     font-weight: 400;
@@ -697,11 +698,11 @@ section h3.section-subheading {
     margin-bottom: 0px;
 }
 
-.team-member h4 a {
+.reviewer h4 a {
     text-transform: none;
 }
 
-.team-member h5 {
+.reviewer h5 {
     font-size: 14px;
     text-transform: none;
     font-style: italic;
@@ -710,15 +711,15 @@ section h3.section-subheading {
     margin-bottom: 15px
 }
 
-.team-member .report  {
+.reviewer .report  {
     margin-top: 0px;
 }
 
-.team-member h5 a {
+.reviewer h5 a {
     text-transform: none;
 }
 
-.team-member ul {
+.reviewer ul {
     list-style: none;
     text-align: center;
     margin-top: 15px;
@@ -726,7 +727,7 @@ section h3.section-subheading {
     padding: 0;
 }
 
-.team-bio {
+.reviewer-bio {
     padding: 15px
 }
 
