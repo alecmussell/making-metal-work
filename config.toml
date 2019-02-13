@@ -43,7 +43,7 @@ publishDir = "../docs"
     services = "Services"
     portfolio = "Portfolio"
     about = "About"
-    team = "Team"
+    reviews = "Reviews"
     contact = "Contact"
 
     # Add custom links. Those can be pre- and postpended to the default menu above.
@@ -81,19 +81,22 @@ publishDir = "../docs"
     [[params.services.row]]
 
     [[params.services.row.list]]
-      icon = "fa-shopping-cart"
+      #icon = "fa-shopping-cart"
+      img = "noun_gate_2141390.png"
       title = "Gates & Railings"
       description = "Hand made metal gates and railings made to measure with all installation included. Automated gate installation is also available"
       #url = "#"
 
     [[params.services.row.list]]
-      icon = "fa-laptop"
+      #icon = "fa-laptop"
+      img = "noun_spanner_2186846.png"
       title = "Restoring existing metal work"
       description = "Removal of existing metal gates or railings for repair, restoration and repainting (powder coating)"
       #url = "#"
 
     [[params.services.row.list]]
-      icon = "fa-lock"
+      #icon = "fa-lock"
+      img = "blueprint.webp"
       title = "Bespoke builds and designs"
       description = "From metal flowers to metal archways, we can work with you to make your metal work"
       #url = "#"
@@ -120,28 +123,27 @@ publishDir = "../docs"
     enable = true
     title = "About"
     #subtitle = ""
-    endpoint = "Installation complete"
 
     # The events will be listed from the top to the bottom.
     # All images are stored under 'static/img/about'.
     # Replace them with your own.
     [[params.about.events]]
-      img = "1.jpg"
+      img = "noun_Phone_2210662.png"
       title = "Initial Contact"
-      description = "We arrange a time and place to meet in person. Contact me <<< LINK to contact section"
+      description = "We arrange a time and place to meet in person."
 
     [[params.about.events]]
-      img = "2.jpg"
+      img = "blueprint.webp"
       title = "Design"
       description = "Working alongside you to choose the right design and colours"
 
     [[params.about.events]]
-      img = "3.jpg"
+      img = "noun_Welder_24911.png"
       title = "Fabrication"
       description = "Your design is fabricated and made to measure, then sent to be powder coated in the colour of your choice"
 
     [[params.about.events]]
-      img = "4.jpg"
+      img = "noun_gates_1851721.png"
       title = "Installation"
       description = "Gates and railings are then installed using any posts, fixtures or fittings as required"
 
