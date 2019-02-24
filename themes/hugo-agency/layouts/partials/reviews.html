@@ -11,8 +11,10 @@
       {{ range .Site.Params.reviews.members }}
         <div class="col-sm-4 col">
           <div class="reviewer">
+<!---
             {{ $url := printf "img/reviews/%s" .img }}
             <img src="{{ $url | absURL }}" class="img-responsive img-circle" alt="{{ .name }}">
+-->
             <h3>{{ .name | markdownify }}</h3>
 
             {{ with .position }}
