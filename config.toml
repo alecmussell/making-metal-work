@@ -1,8 +1,9 @@
 # Site settings
-baseurl = "/making-metal-work/"
-languageCode = "en-us"
+#baseurl = "/making-metal-work/"
+baseurl = "/"
+languageCode = "en-gb"
 title = "Alec Mussell"
-theme = "hugo-agency-theme"
+theme = "hugo-agency"
 publishDir = "../docs"
 
 [params]
@@ -15,8 +16,8 @@ publishDir = "../docs"
 
   # To provide some metadata for search engines feel free to add a few
   # information about you and your website.
-  name = "Your name"
-  description = "Your description"
+  name = "Alec Mussell"
+  description = "Making Metal Work"
   # email = "your@email.com"
 
   # Link custom assets relative to /static
@@ -34,15 +35,6 @@ publishDir = "../docs"
     heading = "Page couldn't be found"
     text = "Please visit [this page](/)"
 
-  # Optional piwik tracking
-  #[params.analytics.piwik]
-  #  URL = "https://stats.example.com"
-  #  ID = "42"
-  #  # Track all subdomains with "*.example.com"
-  #  domain = "www.example.com"
-  #  # Optional integrity check hash
-  #  hash = "sha512-RfeD0pacGTqy9m7U6PgehQfS4cc7SIt+e+P+H5e848kEvB/RW84CUGO3O4O3LNbxjevym6KPUZ8muPsMrI8WIw=="
-
   # Navigation
   [params.navigation]
     brand = "Alec Mussell - Making Metal Work"
@@ -51,7 +43,7 @@ publishDir = "../docs"
     services = "Services"
     portfolio = "Portfolio"
     about = "About"
-    team = "Team"
+    reviews = "Reviews"
     contact = "Contact"
 
     # Add custom links. Those can be pre- and postpended to the default menu above.
@@ -65,10 +57,10 @@ publishDir = "../docs"
     #  weight = 10
 
     # postpended links
-    [[menu.postpend]]
-      url = "http://gohugo.io"
-      name = "External link"
-      weight = 10
+    #[[menu.postpend]]
+    #  url = "http://gohugo.io"
+    #  name = "External link"
+    #  weight = 10
 
 
   # Hero section
@@ -84,27 +76,30 @@ publishDir = "../docs"
   [params.services]
     enable = true
     title = "Services"
-    #subtitle = "Lorem ipsum dolor sit amet consectetur."
+    #subtitle = ""
 
     [[params.services.row]]
 
     [[params.services.row.list]]
-      icon = "fa-shopping-cart"
+      #icon = "fa-shopping-cart"
+      img = "noun_gate_2141390.png"
       title = "Gates & Railings"
       description = "Hand made metal gates and railings made to measure with all installation included. Automated gate installation is also available"
-      url = "#"
+      #url = "#"
 
     [[params.services.row.list]]
-      icon = "fa-laptop"
+      #icon = "fa-laptop"
+      img = "noun_spanner_2186846.png"
       title = "Restoring existing metal work"
       description = "Removal of existing metal gates or railings for repair, restoration and repainting (powder coating)"
-      url = "#"
+      #url = "#"
 
     [[params.services.row.list]]
-      icon = "fa-lock"
+      #icon = "fa-lock"
+      img = "blueprint.webp"
       title = "Bespoke builds and designs"
       description = "From metal flowers to metal archways, we can work with you to make your metal work"
-      url = "#"
+      #url = "#"
 
   # Portfolio section
   [params.portfolio]
@@ -114,12 +109,12 @@ publishDir = "../docs"
     # at the root of this Hugo site.
     # For more informtion take a look at the README.
     title = "Portfolio"
-    subtitle = "Lorem ipsum dolor sit amet consectetur."
+    #subtitle = ""
 
     [params.portfolio.modal]
-      client = "Client"
-      date = "Date"
-      category = "Category"
+      #client = "Client"
+      #date = "Date"
+      #category = "Category"
       buttonText = "Close project"
 
 
@@ -127,65 +122,64 @@ publishDir = "../docs"
   [params.about]
     enable = true
     title = "About"
-    #subtitle = "Lorem ipsum dolor sit amet consectetur."
-    endpoint = "Installation complete"
+    #subtitle = ""
 
     # The events will be listed from the top to the bottom.
     # All images are stored under 'static/img/about'.
     # Replace them with your own.
     [[params.about.events]]
-      img = "1.jpg"
+      img = "noun_Phone_2210662.png"
       title = "Initial Contact"
-      description = "We arrange a time and place to meet in person. Contact me <<< LINK to contact section"
+      description = "We arrange a time and place to meet in person."
 
     [[params.about.events]]
-      img = "2.jpg"
+      img = "blueprint.webp"
       title = "Design"
       description = "Working alongside you to choose the right design and colours"
 
     [[params.about.events]]
-      img = "3.jpg"
+      img = "noun_Welder_24911.png"
       title = "Fabrication"
       description = "Your design is fabricated and made to measure, then sent to be powder coated in the colour of your choice"
 
     [[params.about.events]]
-      img = "4.jpg"
+      img = "noun_gates_1851721.png"
       title = "Installation"
       description = "Gates and railings are then installed using any posts, fixtures or fittings as required"
 
 
 #  # Comments section
-  [params.team]
+  [params.reviews]
     enable = true
     # Possibility to center items
     #center = true
-    title = "Our amazing team"
-    subtitle = "Lorem ipsum dolor sit amet consectetur."
-    description = "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut eaque, laboriosam veritatis, quos non quis ad perspiciatis, totam corporis ea, alias ut unde."
+    title = "Reviews"
+    #subtitle = ""
+    #description = ""
 
-    # All team member's pictures are stored under 'static/img/team'.
+    # Pictures are stored under 'static/img/reviews'.
     # Replace them with your own too.
     # Suggestion: Image size should be at least 360px*360px or the alignment might be affected.
-    [[params.team.members]]
+    [[params.reviews.members]]
       #img = "1.jpg"
       img = "fa-twitter"
       name = "Kay Garland"
       bio = """Kay is an awesome Lead Designer with heaps of experience in the field of UX.
 She worked at Pied Piper for years until they went belly up."""
 
-    [[params.team.members]]
+    [[params.reviews.members]]
       img = "1.jpg"
       name = "Kay Garland"
       bio = """Kay is an awesome Lead Designer with heaps of experience in the field of UX.
 She worked at Pied Piper for years until they went belly up."""
 
-    [[params.team.members]]
+    [[params.reviews.members]]
       img = "1.jpg"
       name = "Kay Garland"
       bio = """Kay is an awesome Lead Designer with heaps of experience in the field of UX.
 She worked at Pied Piper for years until they went belly up."""
 
-    [[params.team.members]]
+    [[params.reviews.members]]
       img = "1.jpg"
       name = "Kay Garland"
       bio = """Kay is an awesome Lead Designer with heaps of experience in the field of UX.
@@ -220,95 +214,40 @@ She worked at Pied Piper for years until they went belly up."""
 
   # Contact section
   [params.contact]
-#    name = "Alec Mussell"
-#    number = "07808730692"
-#    email = "alecmussell@hotmail.com"
+    name = "Alec Mussell"
+    number = "07808 730692"
+    email = "alecmussell@hotmail.com"
+    facebook = "https://www.facebook.com/Makingmetalwork/"
 
 
 
     enable = true
     title = "Contact"
-    #subtitle  = "Lorem ipsum dolor sit amet consectetur."
-    buttonText = "Send message"
-    # netlify = true
-
-    # Since this template is static, the contact form uses www.formspree.io as a
-    # proxy. The form makes a POST request to their servers to send the actual
-    # email. Visitors can send up to a 1000 emails each month for free.
-    #
-    # What you need to do for the setup?
-    #
-    # - set your email address under 'email' below
-    # - upload the generated site to your server
-    # - send a dummy email yourself to confirm your account
-    # - click the confirm link in the email from www.formspree.io
-    # - you're done. Happy mailing!
-
-    # It is possible to substitute formspring with other providers
-    # as an example the mailout plugin from caddy.
-    # Provide the post URL for the form and depending on the provider
-    # add some custom JS script to finish the implementation.
-    # postURL = "https://example.com/mailout/"
-
-    email = "your@email.com"
-
-    # Success and error message overwrite for async contact form
-    #thanks = "Thank you for awesomely contacting us."
-    #error = "Message could not be send. Please contact us at mail@example.com instead."
-
-    [params.contact.captcha]
-      # sitekey = ""
-
-    # 'warning' defines error messages for invalid inputs
-    [params.contact.form.name]
-      text = "Your Name *"
-      warning = "Please enter your name."
-
-    [params.contact.form.email]
-      text = "Your Email *"
-      warning = "Please enter your email address."
-
-    [params.contact.form.phone]
-      text = "Your Phone *"
-      warning = "Please enter your phone number."
-
-    [params.contact.form.message]
-      text = "Your Message *"
-      warning = "Please enter a message."
-
-      # Add optional form fields to identify contact forms
-      #[[params.contact.form.hidden]]
-      #  name = "someID"
-      #  value = "example.com"
-      #
-      #[[params.contact.form.hidden]]
-      # Special values for name such as "page" and "site" will be autofilled
-      #  name = "page"
 
   # Footer section
   [params.footer]
-    enable = true
-    copyright = "Published under the Apache License 2.0."
+    enable = false
+    #copyright = "Published under the Apache License 2.0."
 
-    [[params.footer.social]]
-      icon = "fa-twitter"
-      link = "#"
-      title = "Twitter"
+    #[[params.footer.social]]
+    #  icon = "fa-twitter"
+    #  link = "#"
+    #  title = "Twitter"
 
-    [[params.footer.social]]
-      icon = "fa-facebook"
-      link = "#"
-      title = "Facebook"
+    #[[params.footer.social]]
+    #  icon = "fa-facebook"
+    #  link = "#"
+    #  title = "Facebook"
 
-    [[params.footer.social]]
-      icon = "fa-linkedin"
-      link = "#"
-      title = "LinkedIn"
+    #[[params.footer.social]]
+    #  icon = "fa-linkedin"
+    #  link = "#"
+    #  title = "LinkedIn"
 
-    [[params.footer.quicklinks]]
-      text = "Privacy Policy"
-      link = "#"
+    #[[params.footer.quicklinks]]
+    #  text = "Privacy Policy"
+    #  link = "#"
 
-    [[params.footer.quicklinks]]
-      text = "Terms of Use"
-      link = "#"
+    #[[params.footer.quicklinks]]
+    #  text = "Terms of Use"
+    #  link = "#"
