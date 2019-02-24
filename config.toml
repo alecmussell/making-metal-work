@@ -156,7 +156,7 @@ publishDir = "../docs"
     # Suggestion: Image size should be at least 360px*360px or the alignment might be affected.
     [[params.reviews.members]]
       img = "comment.webp"
-      name = "name"
+      name = "Mr & Mrs Thompson"
       bio = """We struggled to find somebody who could create bespoke gates for our property.
 Alec agreed to come to Hull and sat with us and designed just what we were looking for.
 We are extremely happy with the results. The gates are of very high quality and have beautiful 
