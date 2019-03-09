@@ -134,12 +134,12 @@ publishDir = "../docs"
     [[params.about.events]]
       img = "welder.webp"
       title = "Fabrication"
-      description = "Your design is fabricated and made to measure, then sent to be powder coated in the colour of your choice"
+      description = "Your design is fabricated and made to measure, then sent to be powder coated in the colour of your choice. Galvanising available."
 
     [[params.about.events]]
       img = "gates.webp"
       title = "Installation"
-      description = "Gates and railings are then installed using any posts, fixtures or fittings as required"
+      description = "Gates and railings are then installed using any posts, fixtures and fittings as required"
 
 
 #  # Comments section
