@@ -1,6 +1,6 @@
 # Site settings
-#baseurl = "/making-metal-work/"
-baseurl = "/"
+baseurl = "/making-metal-work/"
+#baseurl = "/"
 languageCode = "en-gb"
 title = "Alec Mussell"
 theme = "hugo-agency"
