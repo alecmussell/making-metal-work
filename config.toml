@@ -1,6 +1,6 @@
 # Site settings
-baseurl = "/making-metal-work/"
-#baseurl = "/"
+#baseurl = "/making-metal-work/"
+baseurl = "/"
 languageCode = "en-gb"
 title = "Alec Mussell"
 theme = "hugo-agency"
@@ -81,17 +81,17 @@ publishDir = "../docs"
     [[params.services.row]]
 
     [[params.services.row.list]]
-      img = "gate.webp"
+      img = "gate.png"
       title = "Gates & Railings"
       description = "Hand made metal gates and railings made to measure with all installation included. Automated gate installation is also available"
 
     [[params.services.row.list]]
-      img = "spanner.webp"
+      img = "spanner.png"
       title = "Restoring existing metal work"
       description = "Removal of existing metal gates or railings for repair, restoration and repainting (powder coating)"
 
     [[params.services.row.list]]
-      img = "blueprint.webp"
+      img = "blueprint.png"
       title = "Bespoke builds and designs"
       description = "From metal flowers to metal archways, we can work with you to make your metal work"
 
@@ -122,22 +122,22 @@ publishDir = "../docs"
     # All images are stored under 'static/img/about'.
     # Replace them with your own.
     [[params.about.events]]
-      img = "phone.webp"
+      img = "phone.png"
       title = "Initial Contact"
       description = "We arrange a time and place to meet in person."
 
     [[params.about.events]]
-      img = "blueprint.webp"
+      img = "blueprint.png"
       title = "Design"
       description = "Working alongside you to choose the right design and colours"
 
     [[params.about.events]]
-      img = "welder.webp"
+      img = "welder.png"
       title = "Fabrication"
       description = "Your design is fabricated and made to measure, then sent to be powder coated in the colour of your choice. Galvanising available."
 
     [[params.about.events]]
-      img = "gates.webp"
+      img = "gates.png"
       title = "Installation"
       description = "Gates and railings are then installed using any posts, fixtures and fittings as required"
 
@@ -155,12 +155,25 @@ publishDir = "../docs"
     # Replace them with your own too.
     # Suggestion: Image size should be at least 360px*360px or the alignment might be affected.
     [[params.reviews.members]]
-      img = "comment.webp"
+      img = "comment.png"
       name = "Mr & Mrs Thompson"
       bio = """We struggled to find somebody who could create bespoke gates for our property.
 Alec agreed to come to Hull and sat with us and designed just what we were looking for.
 We are extremely happy with the results. The gates are of very high quality and have beautiful 
 detail. We would highly recommend Alec to anyone.
+"""
+
+    [[params.reviews.members]]
+      img = "comment.png"
+      name = "Mr & Mrs Miller"
+      bio = """Love our new gates. Bespoke gates made to our request. So please with finish.
+Would highly recommend.
+"""
+
+    [[params.reviews.members]]
+      img = "comment.png"
+      name = "Mr & Mrs McCracken"
+      bio = """Thanks Alec. The gates are great. You did a fantastic job. Thank you very much.
 """
 
 #    [[params.reviews.members]]
