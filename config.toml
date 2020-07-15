@@ -1,5 +1,5 @@
 # Site settings
-baseurl = "http://alecmussell.com"
+baseurl = "http://alecmussell.com/making-metal-work"
 #baseurl = "/making-metal-work/"
 #baseurl = "/"
 languageCode = "en-gb"
