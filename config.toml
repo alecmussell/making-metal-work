@@ -5,7 +5,7 @@ baseurl = "http://alecmussell.com/making-metal-work"
 languageCode = "en-gb"
 title = "Alec Mussell"
 theme = "hugo-agency"
-publishDir = "../docs"
+publishDir = "docs"
 
 [params]
   # You can use Markdown syntax for urls [text](//url.to/source) or
